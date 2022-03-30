@@ -1,7 +1,366 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="Eduan Odendaal">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="font/css/open-iconic-bootstrap.css" rel="stylesheet" />
+    <title>Eduan Odendaal</title>
+    <style>
+        .moveFromLeft, .moveFromTop, .moveFromBottom, .moveFromRight, .fadeIn, .story, .typeOut, .zig, .zag, .snakeDown, .snakeUp, .spin, .spinY {
+            opacity: 0;
+            position: relative;
+        }
+
+        .no-padding {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .progress {
+            margin-bottom: 5px;
+        }
+        @media print {
+            .progress {
+                height: 30px !important;
+                width: 100% !important;
+            }
+            .progress-bar {
+                color: #000;
+            }
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container">
+        <div class="row head">
+            <div class="col-sm"></div>
+            <div class="col-sm text-center">
+                <h1><span class="moveFromLeft">Developer</span><span class="moveFromRight">.</span></h1>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+
+        <div class="row subHead">
+            <div class="col-sm">
+                <p class="text-sm-right">
+                    <span class="fadeIn">HI</span> <span class="moveFromTop">MY NAME IS</span>
+                    <br />
+                    <b><span class="moveFromRight">EDUAN ODENDAAL</span></b>
+                </p>
+            </div>
+            <div class="col-sm">
+                <p class="text-sm-left">
+                    <span class="moveFromBottom">I AM A</span>
+                    <br />
+                    <b><span class="typeOut">F</span><span class="typeOut">U</span><span class="typeOut">L</span><span class="typeOut">L</span><span class="typeOut">-</span><span class="typeOut">S</span><span class="typeOut">T</span><span class="typeOut">A</span><span class="typeOut">C</span><span class="typeOut">K </span><span class="typeOut">D</span><span class="typeOut">E</span><span class="typeOut">V</span><span class="typeOut">E</span><span class="typeOut">L</span><span class="typeOut">O</span><span class="typeOut">P</span><span class="typeOut">E</span><span class="typeOut">R</span></b>
+                </p>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row" id="scroll1" style="display: none;">
+            <div class="col-sm skill">
+                <div class="row">
+                    <div class="col-sm no-padding">
+                        <div class="col-sm text-sm-right text-secondary moveFromTop" style="font-size: 12px; padding-right: 3px;">
+                            <span class="oi oi-code" aria-hidden="true"></span>
+                            <span class="oi oi-monitor" aria-hidden="true"></span>
+                            <span class="oi oi-cloud" aria-hidden="true"></span>
+                            <span class="oi oi-bug" aria-hidden="true"></span>
+                            <span class="oi oi-bluetooth" aria-hidden="true"></span>
+                            <span class="oi oi-brush" aria-hidden="true"></span>
+                        </div>
+                        <div class="col-sm text-sm-right" style="padding-right: 3px;"><span class="moveFromLeft">MY WEAPON</span></div>
+                    </div>
+                    <div class="col-sm" style="font-size: 32px; padding-left: 0px;"><span class="moveFromBottom">OF CHOICE</span></div>
+                    <div class="w-100"></div>
+                    <div class="col-sm skillList"></div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="row qualifications">
+                    <div class="col-sm no-padding">
+                        <div class="col-sm text-sm-right text-secondary fadeIn" style="font-size: 12px; padding-right: 3px;">
+                            <span class="oi oi-badge" aria-hidden="true"></span>
+                            <span class="oi oi-bookmark" aria-hidden="true"></span>
+                            <span class="oi oi-check" aria-hidden="true"></span>
+                            <span class="oi oi-flag" aria-hidden="true"></span>
+                            <span class="oi oi-droplet" aria-hidden="true"></span>
+                            <span class="oi oi-fire" aria-hidden="true"></span>
+                        </div>
+                        <div class="col-sm text-sm-right" style="padding-right: 3px;"><span class="moveFromRight">MY BATTLES</span></div>
+                    </div>
+                    <div class="col-sm" style="font-size: 32px; padding-left: 0px;"><span class="moveFromLeft">WON</span></div>
+                    <div class="w-100"></div>
+                    <div class="col-sm qualificationsList"></div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="row experience">
+                    <div class="col-sm no-padding">
+                        <div class="col-sm text-sm-right moveFromTop" style="font-size: 12px; padding-right: 3px;">
+                            'EXPERIENCE'
+                        </div>
+                        <div class="col-sm text-sm-right" style="padding-right: 3px;"><span class="moveFromLeft">TROOPS I FOUGHT</span></div>
+                    </div>
+                    <div class="col-sm" style="font-size: 32px; padding-left: 0px;"><span class="moveFromRight">WITH</span></div>
+                    <div class="w-100"></div>
+                    <div class="col-sm experienceList">
+                        <p class="text-center" style="margin-bottom: 0px; opacity: 1;">&nbsp;</p>
+                        <p class="snakeUp">
+                            <small class="text-secondary">February 2017 - present</small><br />
+                            <b>Software Developer @ Centric NetSOLUTIONS</b><br />
+                            <br />
+                            <span class="text-secondary">Solution to Invoicing and Money Distribution. AccountaBill for cloud based file storing.</span>
+                        </p>
+                        <p class="text-center" style="margin-bottom: 0px; opacity: 1;">&nbsp;</p>
+                        <p class="snakeUp">
+                            <small class="text-secondary">June 2016 - December 2016</small><br />
+                            <b>Freelance @ Catalyst</b><br />
+                            <br />
+                            <span class="text-secondary">I worked on various applications. I was also involved in teaching students at CTU Pretoria campus for .NET C#</span>
+                        </p>
+                        <p class="text-center" style="margin-bottom: 0px; opacity: 1;">&nbsp;</p>
+                        <p class="snakeUp">
+                            <small class="text-secondary">November 2015 - October 2016</small><br />
+                            <b>Freelance PHP Developer @ Hambisana</b><br />
+                            <br />
+                            <span class="text-secondary">I provided help on PHP development for a website. This is after my original time working for them.</span>
+                        </p>
+                        <p class="text-center" style="margin-bottom: 0px; opacity: 1;">&nbsp;</p>
+                        <p class="snakeUp">
+                            <small class="text-secondary">January 2015 - January 2016</small><br />
+                            <b>Web Developer @ MRJ</b><br />
+                            <br />
+                            <span class="text-secondary">I developed their company website as a freelance. It was an IT Solutions web page built using WordPress and a custom bought theme. Modified to the client's request.</span>
+                        </p>
+                        <p class="text-center" style="margin-bottom: 0px; opacity: 1;">&nbsp;</p>
+                        <p class="snakeUp">
+                            <small class="text-secondary">May 2013 - August 2013</small><br />
+                            <b>Software Developer @ Hambisana</b><br />
+                            <br />
+                            <span class="text-secondary">Student Intern, Developed ‘Tattoo Gateway Configuration Tool for MultiChoice’ an application that was designed to configure the IDC in a simple and easy way.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="d-print-none" />
+        <div class="d-none d-print-block" style="width: 100%; height: 250px;"></div>
+        
+
+        <div class="row" id="scroll2" style="display: none;">
+            <div class="col-sm conferences">
+                <h3><span class="oi oi-signpost spinY" aria-hidden="true"></span>&nbsp;<span class="moveFromTop">I WAS THERE!</span></h3>
+                <p class="text-center" style="margin-bottom: 0px; opacity: 1;">&nbsp;</p>
+                <p class="snakeUp"><span class="oi oi-check text-secondary" aria-hidden="true"></span>&nbsp;Microsoft Tech Summit (2017)</p>
+                <p class="snakeDown"><span class="oi oi-check text-secondary" aria-hidden="true"></span>&nbsp;DevConf ZA (2017)</p>
+                <p class="snakeUp"><span class="oi oi-check text-secondary" aria-hidden="true"></span>&nbsp;DevConf ZA (2018)</p>
+                <p class="snakeDown"><span class="oi oi-clock text-secondary" aria-hidden="true"></span>&nbsp;Microsoft Ignite (2019) (Coming Soon)</p>
+            </div>
+            <div class="col-sm hobby">
+                <h3><span class="oi oi-puzzle-piece moveFromLeft" aria-hidden="true"></span><span class="moveFromRight">Hobby</span></h3>
+
+                <p class="text-center" style="margin-bottom: 0px; opacity: 1;">&nbsp;</p>
+
+                <p class="story">I enjoy long walks on the bea.. <span class="oi oi-warning text-warning spin" aria-hidden="true"></span></p>
+                <p class="story">no <span class="oi oi-x text-danger spin" aria-hidden="true"></span>&nbsp;i don't...</p>
+                <p class="story">I enjoy spending time writing <span class="oi oi-code text-secondary spin" aria-hidden="true"></span>&nbsp;code <code class="fadeIn">#CodingAddiction</code></p>
+                <p class="story">and playing <span class="oi oi-monitor text-secondary spin" aria-hidden="true"></span>&nbsp;competitive gaming. <code class="fadeIn">#eSports</code></p>
+            </div>
+            <div class="col-sm emptySpace">
+                <img class="fadeIn rounded" src="src/medals.png" />
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row about" id="scroll3" style="display: none;">
+            <div class="col-sm">
+                <h3><span class="font-weight-light snakeDown">ABOUT </span><span class="snakeDown">ME</span> <span class="font-weight-light spin">!</span></h3>
+                <p class="text-center" style="margin-bottom: 0px; opacity: 1;">&nbsp;</p>
+                <p class="fadeIn">My main Focus and experience is Window Application and Unity3D Game Development with C#.</p>
+                <p class="fadeIn">I'm also very familiar with PHP, MySQL and HTML5 creating Website Applications.</p>
+                <p class="fadeIn">I have used various source control management tools such as Git and Mercurial.</p>
+                <p class="fadeIn">How I keep my skills sharp, Following the 'Clean Code of Uncle Bob' method enable me to break down requirements into smaller pieces, keeping my work clean and simple.</p>
+            </div>
+        </div>
+        
+        <hr class="d-print-none" />
+
+        <div class="row end d-print-none">
+            <div class="col-sm">
+                <h3 class="story">T<span class="font-weight-light">HANK YOU :)</span></h3>
+                <p class="text-center" style="margin-bottom: 0px; opacity: 1;">&nbsp;</p>
+                <p class="story">Hope you enjoyed my slideshow!</p>
+                <p class="story">I am <b>PRINT</b> frendly!</p>
+                <p class="story">My contact details are showing in the print preview. <i>Press ctrl + P</i></p>
+                <p class="story"><code>#magic</code></p>
+            </div>
+        </div>
+
+        <hr class="d-none d-print-block" />
+
+        <div class="row d-none d-print-block">
+            <div class="col-sm">
+                <h3>LETS <span class="font-weight-light">CONNECT</span></h3>
+                <p class="text-center" style="margin-bottom: 0px; opacity: 1;">&nbsp;</p>
+                <p><b>Location:</b> Pretoria East, South Africa</p>
+                <p><b>Email:</b> eodendaal@me.com</p>
+            </div>
+        </div>
+
+        <div class="d-print-none" style="width: 100%; min-height: 750px;"></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="Scripts/Config.js"></script>
+    <script src="Scripts/Animator.js"></script>
+    <script src="Scripts/OnLoad.js"></script>
+    <script>
+        function LoadBanner(loadAfter) {
+            Animator.moveFromLeft('head', function () {
+                Animator.moveFromRight('head', function () {
+                    if (loadAfter) loadAfter();
+                });
+            });
+        }
+
+        function LoadSubHeader(loadAfter) {
+            Animator.fadeIn('subHead', function () {
+                Animator.moveFromTop('subHead', function () {
+                    Animator.moveFromRight('subHead', function () {
+                        Animator.moveFromBottom('subHead', function () {
+                            Animator.typeOut('subHead', function () {
+                                if (loadAfter) loadAfter();
+                            });
+                        });
+                    });
+                });
+            });
+        }
+
+        function LoadSkill(loadAfter) {
+            Animator.moveFromLeft('skill', function () {
+                Animator.moveFromTop('skill', function () {
+                    Animator.moveFromBottom('skill', function () {
+                        Animator.snakeDown('skill', function () {
+                            if (loadAfter) loadAfter();
+                        });
+                    });
+                });
+            });
+        }
+
+        function LoadQualifications(loadAfter) {
+            Animator.moveFromRight('qualifications', function () {
+                Animator.moveFromLeft('qualifications', function () {
+                    Animator.fadeIn('qualifications', function () {
+                        Animator.zigZag('qualifications', function () {
+                            if (loadAfter) loadAfter();
+                        });
+                    });
+                });
+            });
+        }
+
+        function LoadExperience(loadAfter) {
+            Animator.moveFromTop('experience', function () {
+                Animator.moveFromLeft('experience', function () {
+                    Animator.moveFromRight('experience', function () {
+                        Animator.storyTelling('experience', function () {
+                            Animator.snakeUp('experience', function () {
+                                if (loadAfter) loadAfter();
+                            });
+                        });
+                    });
+                });
+            });
+        }
+
+        function LoadHobby(loadAfter) {
+            Animator.moveFromLeft('hobby', function () {
+                Animator.moveFromRight('hobby', function () {
+                    Animator.storyTelling('hobby', function () {
+                        Animator.spin('hobby', function () {
+                            Animator.fadeIn('hobby', function () {
+                                if (loadAfter) loadAfter();
+                            });
+                        });
+                    });
+                });
+            });
+        }
+
+        function LoadConferences(loadAfter) {
+            Animator.spinY('conferences', function () {
+                Animator.moveFromTop('conferences', function () {
+                    Animator.snakeUp('conferences', function () {
+                        Animator.snakeDown('conferences', function () {
+                            if (loadAfter) loadAfter();
+                        });
+                    });
+                });
+            });
+        }
+
+        function LoadEmptySpace(loadAfter) {
+            Animator.fadeIn('emptySpace', function () {
+                if (loadAfter) loadAfter();
+            });
+        }
+
+        function LoadAbout(loadAfter) {
+            Animator.snakeDown('about', function () {
+                Animator.spin('about', function () {
+                    Animator.fadeIn('about', function () {
+                        if (loadAfter) loadAfter();
+                    });
+                });
+            });
+        }
+
+        LoadBanner(function () {
+            LoadSubHeader(function () {
+                Animator.scrollTo('scroll1', function () {
+                    LoadSkill(function () {
+                        LoadQualifications(function () {
+                            LoadExperience(function () {
+                                Animator.pause(2, function () {
+                                    Animator.scrollTo('scroll2', function () {
+                                        LoadConferences(function () {
+                                            LoadHobby(function () {
+                                                LoadEmptySpace(function () {
+                                                    Animator.pause(2, function () {
+                                                        Animator.scrollTo('scroll3', function () {
+                                                            LoadAbout(function() {
+                                                                Animator.pause(2, function () {
+                                                                    Animator.storyTelling('end');
+                                                                });
+                                                            });
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
